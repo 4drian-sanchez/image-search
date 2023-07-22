@@ -1,0 +1,16 @@
+{
+  "name": "buscardor-imagenes",
+  "version": "1.0.0",
+  "description": "buscador de imagenes",
+  "main": "index.js",
+  "scripts": {
+    "css": "sass --watch src/scss:build/css",
+    "build:css": "purgecss --css build/css/app.css --content index.html --output build/css/build.css"
+  },
+  "author": "Adrian",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.2.3",
+    "sass": "^1.57.0"
+  }
+}

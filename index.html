@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMG | Buscardor de imagenes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./build/css/app.css" />
+    <script defer src="./js/app.js"></script>
+  </head>
+
+  <body onresize="obtenerSizes()">
+    <header
+      class="header position-relative d-flex align-items-center justify-content-center flex-column"
+    >
+      <nav class="nav sobre-mi">
+        <a
+          href="./sobremi.html"
+          class="nav-link text-white btn btn-outline-dark fw-bold"
+          >Sobre mi</a
+        >
+      </nav>
+
+      <div class="container-xl">
+        <h1 class="header-heading text-white mb-4 text-center">
+          Imagénes gratuitas y libres de regalias
+        </h1>
+
+        <form id="form" class="form">
+          <input
+            type="text"
+            id="termino"
+            class="form-control d-block w-100 pe-5 rounded-4"
+            minlength="1"
+            maxlength="100"
+          />
+          <button id="search" type="submit" class="form__submit-btn d-block">
+            <img
+              src="./build/img/search.svg"
+              alt="Icono de busqueda"
+              class="form__icono-search"
+            />
+          </button>
+        </form>
+      </div>
+    </header>
+  </body>
+</html>

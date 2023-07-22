@@ -1,0 +1,13 @@
+@use "../custom" as *;
+
+.header {
+  background-image: linear-gradient(
+      to right,
+      transparentize(#333, 0.5) 0%,
+      transparentize(#333, 0.3) 100%
+    ),
+    url(../img/alberta.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}

@@ -1,0 +1,23 @@
+@use "../custom" as *;
+
+.form {
+  position: relative;
+
+  &-control::placeholder {
+    color: var(--colorAlert, #000);
+  }
+
+  &__submit-btn {
+    position: absolute;
+    right: 0.7rem;
+    top: -3px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.6rem;
+  }
+
+  &__icono-search {
+    width: 1.4rem;
+    background-color: #fff;
+  }
+}
